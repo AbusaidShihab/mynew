@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+  </head>
+  <body>
+    <h2>oh whaaa!</h2>
+    <input type="text"placeholder="enter your name"/>
+<input type="password"placeholder="enter your name"id="pass1"/>
+
+<button onclick="funi()">Submit</button>
+<script>
+function funi(){
+  var red=window.localStorage.getItem("name");
+  var inp=document.querySelector("input").value;
+  if(red==inp){
+    alert("loginsuccessful");
+window.location.href="hi.html"
+
+}else{
+  alert('not ok')
+}
+}
+
+</script>
+  </body>
+</html>

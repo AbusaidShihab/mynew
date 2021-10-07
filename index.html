@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <script src="script.js"></script>
+    <!-- <link rel="stylesheet" type="text/css" href="styles.css"> -->
+  </head>
+  <body>
+    <h1>Hello there!</h1>
+<input type="text"placeholder="enter your name"/>
+<input type="password"placeholder="enter your name"id="pass"/>
+
+<button onclick="fun()">Submit</button>
+<a href="me.html">Login</a>
+<script>
+
+function fun(){
+  var inp=document.querySelector("input").value;
+    alert("loginsuccessful");
+window.location.href="me.html"
+window.localStorage.setItem("name",inp);
+
+}
+</script>
+  </body>
+</html>
